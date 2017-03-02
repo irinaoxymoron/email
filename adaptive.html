@@ -20,36 +20,49 @@
     .appleBody a { color:#68440a; text-decoration: none; }
     .appleFooter a { color:#999999; text-decoration: none; }
 
-    @media screen and (device-width: 480px) and (device-height: 360px), screen and (device-width: 360px) and (device-height: 480px), screen and (device-width: 320px) and (device-height: 240px) {
-        table[class="wrapper"]{ width:100% !important; }
-        table[class="mobile-center"] { width: 100% !important; margin: 0 auto; text-align: center; }
-        div[class="mobile-hide"]{ display:none !important; }
-        td[class="mobile-hide"]{ display:none; }
-    }   
+    @media only screen and (max-device-width: 480px) { 
+        table[class="contenttable"] { 
+            width: 300px !important;
+            max-width: 300px !important;
+            background: #000 !important;
+        }
+        tr[class="mobile"] {
+            width: 300px !important;
+            max-width: 300px !important;
+        }
+        td[class="mobile"] {
+            width: 300px !important;
+            max-width: 300px !important;
+        }    
+        p[class="center"]{
+            font-size: 14px !important;
+            text-align: center !important;
+        }
+    }
     </style>
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#fafafa" style="background: #fafafa; width: 100%!important; height: 100%; margin: 0; padding: 0;">
 	<!-- Mail.ru Wrapper -->
 	<div id="mailsub">
 		<!-- Wrapper -->
-		<center class="wrapper" style="table-layout: fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0; margin: 0 auto; width: 100%; max-width: 600px;">
+		<center class="wrapper" style="table-layout: fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0; margin: 0 auto; width: 100%;">
 			<!-- Old wrap -->
             <div class="webkit">
-            	<table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="100%" style="padding: 0; margin: 0 auto; border-collapse: collapse; width: 100%; max-width: 600px;">
+            	<table class="contenttable" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="100%" style="padding: 0; margin: 0 auto; border-collapse: collapse; width: 100%; max-width: 600px;">
             		<tbody>
-                        <tr style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; background: #fafafa;">
-                            <td align="left" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; width: 100%;">
+                        <tr class="mobile" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; background: #fafafa;">
+                            <td class="mobile" align="left" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; width: 100%;">
                                 <p><span style="color: #ffffff; display: none;">Текст прехедера</span></p>
                             </td>
                         </tr>
-                        <tr style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; background: #fafafa;">
-                            <td align="right" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
-                                <p style="text-align: right; font-size: 13px; color: #666666; font-family: 'Roboto', Roboto, Arial, sans-serif; font-weight: normal; line-height: 14px; font-style: normal; margin: 0; padding: 0;" align="right">Читать письмо в браузере - <a href="#" target="_blank" style="text-decoration: none; font-family: 'Roboto', Roboto, Arial, sans-serif; color: #b0005d; margin: 0; padding: 0; line-height: 14px; -webkit-text-size-adjust: none;"><span style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; line-height: 14px;">удобнее&nbsp;&gt;&gt;&gt;</span></a></p>
+                        <tr class="mobile" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; background: #fafafa;">
+                            <td class="mobile" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
+                                <p class="center" style="text-align: right; font-size: 13px; color: #666666; font-family: 'Roboto', Roboto, Arial, sans-serif; font-weight: normal; line-height: 14px; font-style: normal; margin: 0; padding: 0;" align="right">Читать письмо в браузере - <a href="#" target="_blank" style="text-decoration: none; font-family: 'Roboto', Roboto, Arial, sans-serif; color: #b0005d; margin: 0; padding: 0; line-height: 14px; -webkit-text-size-adjust: none;"><span style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; line-height: 14px;">удобнее&nbsp;&gt;&gt;&gt;</span></a></p>
                             </td> 
                         </tr>
-                        <tr style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; background: #fafafa;"><td colspan="3" height="10"></td></tr>
-                        <tr style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
-                            <td style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; border-top:1px solid #f5f5f5;border-bottom:1px solid #f5f5f5;" align="center">
+                        <tr class="mobile" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; background: #fafafa;"><td class="mobile" colspan="3" height="10"></td></tr>
+                        <tr class="mobile" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
+                            <td class="mobile" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0; border-top:1px solid #f5f5f5;border-bottom:1px solid #f5f5f5;" align="center">
                                 <div style="font-family: 'Roboto', Roboto, Arial, sans-serif; max-width: 600px; display: block; margin: 0 auto; padding: 0;">
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0; padding:0; border-collapse: collapse;">
                                         <tbody>
@@ -91,8 +104,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
-                            <td valign="top" style="background:#ffffff none no-repeat center/cover;background-color:#ffffff;background-image:none;background-repeat:no-repeat;background-position:center;background-size:cover;border-top:0;border-bottom:0;padding-top:10px;padding-bottom:0px">
+                        <tr class="mobile" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
+                            <td class="mobile" valign="top" style="background:#ffffff none no-repeat center/cover;background-color:#ffffff;background-image:none;background-repeat:no-repeat;background-position:center;background-size:cover;border-top:0;border-bottom:0;padding-top:10px;padding-bottom:0px">
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0; padding:0; min-width:100%;border-collapse:collapse;">
                                     <tbody>
                                         <tr style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
@@ -112,8 +125,8 @@
                                 </table>
                             </td>
                         </tr>
-            			<tr style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
-            				<td style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;" align="center">
+            			<tr class="mobile" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
+            				<td class="mobile" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;" align="center">
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0; padding:0; min-width:100%;border-collapse:collapse;">
                                     <tbody>
                                         <tr style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
@@ -362,8 +375,8 @@
                                 </table>
                             </td>
                         </tr>
-                        <tr style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
-                            <td valign="top" style="background:#eeeeee none no-repeat center/cover;background-color:#eeeeee;background-image:none;background-repeat:no-repeat;background-position:center;background-size:cover;padding-top:10px;padding-bottom:0">
+                        <tr class="mobile" style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
+                            <td class="mobile" valign="top" style="background:#eeeeee none no-repeat center/cover;background-color:#eeeeee;background-image:none;background-repeat:no-repeat;background-position:center;background-size:cover;padding-top:10px;padding-bottom:0">
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0; min-width:100%;border-collapse:collapse;">
                                     <tbody>
                                         <tr style="font-family: 'Roboto', Roboto, Arial, sans-serif; margin: 0; padding: 0;">
