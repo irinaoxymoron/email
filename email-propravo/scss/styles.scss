@@ -1,0 +1,73 @@
+@import "foundation";
+
+.no-bg {
+  background: transparent !important;
+}
+
+.header-bg {
+  border-bottom: 2px solid #5a2460;
+  border-top: 2px solid #5a2460;
+}
+
+.tiny-text {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.basic-link {
+  color: $alert-color;
+}
+
+.text-link {
+  color: $grey;
+}
+
+.main-img {
+  width: 580px;
+}
+
+.text-img {
+  width: 548px;
+}
+
+.social-img {
+  width: 30px;
+}
+
+.main-header-title {
+  color: $violet;
+  font-size: 17px;
+}
+
+.main-body-title {
+  color: $violet;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.main-body-p {
+  color: $grey;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-p {
+  color: $grey;
+}
+
+.decorative-line {
+  background: $grey;
+  height: 2px;
+}
+
+table.button {
+  margin-bottom: 0;
+  table {
+    td {
+      padding: map-get($button-padding, default);
+      a {
+        padding: 0px;
+      }
+    }
+  }
+}
